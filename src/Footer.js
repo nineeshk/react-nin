@@ -2,9 +2,10 @@ import React from 'react';
 import './Footer.css';
 
 function Footer() {
+    const date = new Date().getFullYear();
     return (
         <div className="Footer">
-            Mitchell Hudson copyright 2021
+            Mitchell Hudson copyright {date}
         </div>
     )
 }
