@@ -4,11 +4,12 @@ import './POPOSList.css';
 import data from './sfpopos-data.json';
 
 function POPOSList() {
-    const spaces = data.map((object) => {
+    const spaces = data.map((object, i) => {
         const { title, address, images, hours } = object
         
         return (
             <POPOSSpace
+                id={i}
                 key={title}
                 name={title}
                 address={address}
